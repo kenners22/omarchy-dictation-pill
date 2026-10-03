@@ -15,7 +15,7 @@ It shows on whichever monitor has focus, never takes keyboard focus, and lets cl
 - Omarchy 4 (Quickshell shell).
 - Voxtype, with `voxtype-audio-bridge` on your `PATH` (it ships with `voxtype-bin`). Omarchy installs both through *Install > Dictation*.
 
-No other dependencies. The plugin doesn't install anything, use sudo, or touch the network. While the pill is showing it runs `voxtype-audio-bridge` to read the mic level, and stops it when the pill hides.
+No other dependencies, and no sudo or pkexec is required. The plugin doesn't install anything or touch the network. While the pill is showing it runs `voxtype-audio-bridge` to read the mic level, and stops it when the pill hides.
 
 ## Install
 
