@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "id": "kenners22.dictation-pill",
+  "name": "Dictation pill",
+  "version": "1.0.0",
+  "author": "kenners22",
+  "description": "A small Wispr Flow-style pill for Voxtype dictation: voice bars while you talk, a soft ripple while it transcribes, in your Omarchy theme's colours.",
+  "kinds": ["panel"],
+  "keepLoaded": true,
+  "entryPoints": { "panel": "Pill.qml" }
+}
