@@ -3,6 +3,7 @@ import Quickshell
 import Quickshell.Io
 import Quickshell.Wayland
 import qs.Commons
+import qs.Commons as Commons
 import qs.Ui
 
 // A small pill at the bottom of the focused screen while Voxtype is dictating.
@@ -142,9 +143,9 @@ Item {
       anchors.horizontalCenter: parent.horizontalCenter
       anchors.bottom: parent.bottom
       anchors.bottomMargin: Style.space(28)
-      color: Util.alpha(Color.popups.background, 0.94)
+      color: Util.alpha(Commons.Color.popups.background, 0.94)
       border.width: 1
-      border.color: Util.alpha(Color.popups.border, 0.35)
+      border.color: Util.alpha(Commons.Color.popups.border, 0.35)
       opacity: root.active ? 1 : 0
       scale: root.active ? 1 : 0.85
       Behavior on opacity { NumberAnimation { duration: 120; easing.type: Easing.OutCubic } }
@@ -161,7 +162,7 @@ Item {
             width: root.barWidth
             height: root.heights[index] || root.minBar
             radius: width / 2
-            color: Color.popups.text
+            color: Commons.Color.popups.text
             opacity: root.transcribing ? 0.6 : 0.95
             Behavior on opacity { NumberAnimation { duration: 150 } }
           }
